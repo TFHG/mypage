@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    grid-template-areas: 
+        "header header header"
+        ". content ."
+        "footer footer footer";
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+header {
+    grid-area: header;
+    background-color: ;
+    color: gray;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    grid-area: content;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.rounded-rectangle {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+aside.left, aside.right {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 1rem;
+    box-sizing: border-box;
+}
+
+section.content {
+    flex: 3;
+    padding: 2rem;
+    background-color: white;
+    margin: 0 1rem;
+    box-sizing: border-box;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    border: 1px solid #
+
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
